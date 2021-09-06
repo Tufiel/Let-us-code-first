@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+}
+
+html
+{
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)),url("/Wallpapers/15.png") no-repeat center center fixed ;
+    background-size: cover;
+}
+
+.stage
+{
+    background:linear-gradient(25deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../Wallpapers/2.png");
+    background-size: cover;
+    width: 80vw;
+    max-height: 83vh;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 2vw 0.7vw 5px black;
+    margin:5vw;
+    transition: all 500ms linear;
+    box-sizing: border-box;
+    
+}
+
+.stage:hover
+{
+   transform: scale(0.97);
+   box-shadow: 0 0 0;
+}
+
+.fab,.fas
+{
+    font-size: 5vw;
+    margin:15px 15px 0 15px;
+    transition: all 500ms linear;
+}
+
+.fas:hover,.fab:hover
+{
+    transform: scale(0.90);
+    box-shadow: 5px 5px 5px black;
+    color: rgba(255, 0, 0, 0.568);
+}
+
+.fa-facebook
+{
+    color: blue;
+}
+
+.fa-envelope,.fa-home
+{
+    color:white;
+}
+.fa-whatsapp
+{
+    color: green;
+}
+
+h4
+{
+    font-size: 3vw;
+    transition: all 1s linear;
+    text-align: center;
+}
+
+.stage:hover h4
+{
+    font-family: cursive,sans-serif;
+    color: blue;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
