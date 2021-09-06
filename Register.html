@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Register.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let us code first | Register</title>
+    <!--Favicon icon -->
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="stage">
+        <form action="https://formspree.io/f/mjvjjkna" method="post">
+          <input
+            type="text"
+            name="First Name:"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="Last Name:"
+            placeholder="Last Name"
+            required
+          />
+          <input type="email" name="Email:" placeholder="Email" required />
+          <input
+            type="number"
+            name="Phone Number:"
+            placeholder="Phone Number"
+            minlength="10"
+            maxlength="12"
+            value="91"
+            min="0"
+          />
+          <select name="occupation" id="ocp" required>
+            <option value="" disabled selected hidden>
+              Choose your Occupation
+            </option>
+            <option value="student">Student</option>
+            <option value="ENg">Engineer</option>
+            <option value="Doc">Doctor</option>
+            <option value="Tec">Teacher</option>
+            <option value="Other">Other</option>
+          </select>
+          <textarea
+            name="Message:"
+            cols="20vw"
+            rows="10vw"
+            placeholder="Any message to Admin"
+          ></textarea
+          ><br />
+          <button class="Register-btn" type="submit"><h5>Register</h5></button>
+          <button class="home-btn" type="button">
+            <h5><a href="index.html" target="_self">Home</a></h5>
+          </button>
+          <button class="reset-btn" type="reset"><h5>Reset</h5></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
