@@ -1,0 +1,1041 @@
+/* 
+=================================
+Google Fonts
+=================================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap|Quicksand:wght@300&display=swap");
+
+/* 
+=================================
+VARIABLES
+=================================
+*/
+
+:root {
+  --border-radius: 0.5rem;
+  --primary-color: rgb(128, 128, 128);
+  --sec-color: rgba(128, 128, 128, 0.8);
+  --ter-color: rgba(128, 128, 128, 0.5);
+  --quan-color: rgba(128, 128, 128, 0.3);
+  --white-color: white;
+  --primary-font: "Fjalla One", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+  --transition: all 500ms linear;
+  --spacing: 0.25rem;
+  --box-shadow: 2px 2px 5px black;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+iframe
+{
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 1px solid white;
+}
+iframe:hover
+{
+    transform: scale(0.97);
+    box-shadow: 0 0 0 0;
+    margin: 1px solid red;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--white-color);
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875 rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: var(--sec-color);
+  color: rgba(255, 255, 255, 0.562);
+  padding: 0.75rem 1rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px black;
+}
+.btn:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+
+/* 
+=================================
+MEDIA QURIES
+=================================
+*/
+@media only screen and (max-device-width: 360px) {
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 8vw;
+  }
+
+  h4 {
+    font-size: 6vw;
+  }
+  h5 {
+    font-size: 4vw;
+  }
+  h6 {
+    font-size: 2vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 460px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 38px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 23px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 13px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 460px) and (max-device-width: 590px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 43px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 38px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 33px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 28px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 23px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+@media only screen and (min-device-width: 590px) and (max-device-width: 790px) {
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 55px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 45px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 40px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 35px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 28px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 790px) and (max-device-width: 950px) {
+  body {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 58px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 53px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 48px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 43px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 38px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 28px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 1224px) {
+  body {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 63px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 58px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 53px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 48px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 45px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 33px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  body {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 78px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 72px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 68px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 63px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 60px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: var(--sec-color);
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 35px;
+    color: var(--ter-color);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-size: 30px;
+    color: var(--quan-color);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+  }
+  h6 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+  }
+}
+/*
+=================================
+  WEBSITE IMAGE AND LOGO
+  =================================
+  */
+  .istimg {
+  position: relative;
+}
+.imgfnt {
+  width: 100vw;
+  object-fit: center/cover;
+  border-radius: var(--borderrad);
+  overflow: hidden;
+  text-align: center;
+}
+
+.imglogo {
+  position: absolute;
+  top: 2vw;
+  left: 35vw;
+  width: 25vw;
+  height: 25vw;
+  transition: all 1s linear;
+  z-index: 0;
+  border: 5px solid yellow;
+  border-radius: 100%;
+  box-shadow: 10px 0 15px black;
+  animation: imglogo 5s ease-in infinite alternate-reverse;
+}
+
+@keyframes imglogo {
+  50% {
+    transform: scale(0.01);
+        box-shadow: 5px 5px 5px;
+
+  }
+  75% {
+              
+ box-shadow: 0 0 0;
+    transform: rotate(360deg);
+  }
+  100% {
+       box-shadow: 1px 1px 1px;
+  }
+}
+
+.imglogo:hover {
+  transform: skewX(180deg);
+}
+
+/* 
+=================================
+NAVIGATION
+=================================
+*/
+
+.nav {
+  display: none;
+  position: fixed;
+  top: 2%;
+  width: 50vw;
+  z-index: 1;
+  padding:7vh 5px 5px 5px;
+  background: rgba(255, 255, 255, 0.637);
+  color: black;
+  border-radius: var(--border-radius);
+}
+
+.nav li a {
+  display: block;
+  background: var(--sec-color);
+    padding: 0.9vh 0;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  color: rgba(0, 0, 0, 0.767);
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+  font-size: 3vw;
+transition:var(--transition);
+}
+
+.nav li
+{
+    transition:all 300ms linear;
+    list-style: none;
+}
+
+.nav li:hover a {
+  background: whitesmoke;
+  color: black;
+}
+
+.nav li:hover {
+  background: var(--primary-color);
+  border-left: 7px solid rgba(255, 0, 0, 0.623);
+  transform: translate(5%);
+  box-shadow: var(--box-shadow);
+}
+.fa-bars {
+  position: fixed;
+  left: 2%;
+  top: 2%;
+  color: black;
+  font-size: 6vw;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+nav:hover .nav {
+  display: block;
+  box-shadow: 5px 5px 5px black;
+      transition:all 30s linear;
+
+}
+
+nav:hover .fa-bars {
+  display: none;
+}
+
+/* 
+=================================
+CONTENT DIVIDER
+=================================
+*/
+.contdvdr {
+  height: 2vh;
+  width: 100vw;
+  background: green;
+}
+
+/* 
+=================================
+ABOUT ME
+=================================
+*/
+
+.aboutme {
+  height: 50vw;
+  width: 100vw;
+  margin-top: 1px;
+  border-radius: var(--border-radius);
+  position: relative;
+  background: rgba(145, 143, 143, 0.393);
+  padding: 5px;
+}
+
+.mypic {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  height: 40vw;
+  width: 40vw;
+  max-height: 85%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 5px 0 5px black;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("me.jpg");
+  background-size: cover;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.myname {
+  position: absolute;
+  top: 43vw;
+  left: 4%;
+  height: 7%;
+  width: 40vw;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 5px 3px 5px black;
+  overflow: hidden;
+  animation: myname 600ms ease-in-out 0s infinite alternate backwards;
+  transition: var(--transition);
+}
+.mypic:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0;
+}
+@media screen and (min-width:1230px) {
+
+  @keyframes myname {
+  0% {
+    top: 37.5vw;
+  }
+  100% {
+    top: 39vw;
+  }
+}
+  
+}
+
+@media screen and (max-width:1230px) {
+
+  @keyframes myname {
+  0% {
+    top: 42.5vw;
+  }
+  100% {
+    top: 45vw;
+  }
+}
+  
+}
+
+.myname:hover {
+  transform: scale(0.9)
+  box-shadow: 1px 1px 3px;
+}
+
+.myname h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: black;
+  font-size: 2.5vw;
+}
+
+.myinfo {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  max-height: 100%;
+  width:50vw ;
+  padding: 0;
+  box-sizing: border-box;
+}
+.myinfo h5 {
+  color: rgba(0, 0, 0, 0.781);
+  font-size: 4.3vw;;
+}
+
+.myinfo i {
+  color: Blue;
+  transition: var(--transition);
+}
+
+.myinfo i:hover {
+  transform: scale(0.8);
+}
+
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
+  .aboutme {
+    height: 50vw;
+    width: 95vw;
+    margin: 1px auto;
+    border-radius: var(--border-radius);
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("6.png");
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .mypic {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    height: 35vw;
+    width: 35vw;
+    max-height: 85%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 5px 0 5px black;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("me.jpg") no-repeat ;
+      background-size: cover;
+    object-fit: cover;
+  }
+
+  .myname {
+    position: absolute;
+    top: 37.25vw;
+    left: 4%;
+    height: 5%;
+    width: 35vw;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 5px 3px 5px black;
+    overflow: hidden;
+  }
+
+  .myname h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 1.2rem;
+    color: black;
+    font-size: 2vw;
+  }
+}
+
+.About {
+  background: lightgreen;
+  width: 100vw;
+  z-index: -1;
+  border-radius: var(--border-radius);
+  padding: 5px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.First-word {
+  color: blue;
+}
+.fa
+{
+    color: rgba(255, 0, 0, 0.623);
+     transition: var(--transition);
+       box-shadow: 0 0 0;
+}
+.fa:hover,
+.fa:hover {
+  color: red;
+  transform: scale(1.1);
+}
+/* 
+=================================
+OVERVIEW OF CHANNEL
+=================================
+*/
+
+.Overview {
+  padding: 10px calc(50vw - 35vh);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("4.png");
+  margin-top: -10px;
+}
+
+.Heading-of-overview {
+  text-align: center;
+  background: rgb(211, 211, 211);
+}
+.Heading-of-overview h3 {
+  color: rgb(5, 59, 209);
+  font-size: 5vw;
+}
+
+.Overview-vid {
+  height: 70vw;
+  width: 70vw;
+  max-height: 70vh;
+  max-width: 70vh;
+  margin: 1vw auto;
+  border-radius: var(--border-radius);
+}
+
+.Youtube {
+  border-radius: var(--border-radius);
+  box-shadow: 1vw 1vw 15px black;
+  transition: var(--transition);
+}
+
+.Overview-vid:hover .Youtube {
+  cursor: pointer;
+  box-shadow: 0 0 0 0;
+  transform: scale(0.95);
+}
+
+/* 
+=================================
+PLAYLISTS
+=================================
+*/
+
+.Playlists {
+  width: 100vw;
+  border: 3px solid darkviolet;
+  padding: 3vw 1px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("15.png");
+  border-radius: var(--border-radius);
+}
+
+
+.Playlist {
+   display: inline-block;  
+  height: 30vw;
+  width: 30vw;
+  box-shadow: 1vw 1vw 15px black;
+  border-radius: var(--border-radius);
+  margin: 1vw;
+  transition: var(--transition);
+  padding: 0;
+}
+
+
+.Playlist:hover {
+  transform: scale(0.97);
+  cursor: pointer;
+  box-shadow: 0 0 0 0;
+  transform: scale(0.95);
+}
+
+.Playlist1{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("c.png") no-repeat;
+  background-size: cover;
+  border: 1px solid;
+}
+
+.Playlist2
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("to\ be\ uploaded.png") no-repeat;
+  background-size: cover;
+  border: 1px solid;
+}
+/* 
+=================================
+CONTENTS 
+=================================
+*/
+.Contant1 {
+  width: 100vw;
+  background: rgb(10, 10, 10);
+  margin-top: 1px;
+  text-align: center;
+}
+
+.Contents {
+  position: relative;
+  display: inline-block;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  margin-bottom: 3px;
+}
+.Contents > h3 {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 2vw;
+}
+
+.Contents:hover .Contents-hidden {
+  display: block;
+  box-shadow: var(--box-shadow);
+}
+.Contents h3:hover {
+  color: white;
+}
+
+.Contents-hidden {
+  display: none;
+  position: absolute;
+  bottom: 90%;
+  transform: translate(-15%);
+  width: 30vw;
+  min-width: 200px;
+  margin: 5px auto;
+  box-sizing: content-box;
+  background: url("15.png");
+  border-radius: var(--border-radius);
+  transition: all 3s linear;
+}
+
+.Contents-hidden > a {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 5px 0;
+  width: 80%;
+  margin: 10px auto;
+  background: green;
+  color: white;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.Contents-hidden a:hover {
+  color: blue;
+  width: 90%;
+  box-shadow: 0 0 0 0;
+  transform: translateX(5%);
+  background: whitesmoke;
+}
+
+/* 
+=================================
+FEW VIDEOS
+=================================
+*/
+
+.videos {
+  background: rgb(10, 10, 10);
+  width: 100vw;
+  padding-top: 1vw;
+  border: 1px solid white;
+  text-align: center;
+}
+.video {
+  position: relative;
+  display: inline-block;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+.video > h3 {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 2vw;
+}
+
+.video:hover .videos-hidden {
+  display: block;
+  box-shadow: var(--box-shadow);
+}
+.video h3:hover {
+  color: white;
+}
+
+.videos-hidden {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%);
+  width: 95vw;
+  box-sizing: content-box;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3)),
+    url("12.png");
+  background-size: cover;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: all 3s linear;
+}
+.videos-hidden iframe
+{
+  float: left;
+  margin: 4.5vw;
+  width: 36vw;
+  max-width: 70vh;
+  height: 36vw;
+  max-height: 70vh;
+  box-shadow:0.5vw 1vw 15px black;
+  transition: var(--transition);
+}
+.videos-hidden iframe:hover
+{
+  transform: scale(0.99);
+  box-shadow: 0 0 0;
+}
+
+
+/* 
+=================================
+YOUTUBE
+=================================
+*/
+.subscribe
+{
+    margin-top: -10px;
+    text-align: center;
+    font-size: 10vw;
+    background: black;
+}
+
+.subscribe h2
+{
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: cursive,sans-serif;
+    font-weight: 100;
+    font-size: 4vw;
+}
+
+.fa-youtube:hover
+{
+ box-shadow: 3px 2px 5px white;
+}
+
+/* 
+=================================
+FOOTER
+=================================
+*/
+
+.footer
+{
+    width: 100vw;
+    background:linear-gradient(rgba(20, 18, 18, 0.3),rgba(161, 161, 64, 0.3),rgba(44, 36, 36, 0.3)),url("13.png");
+    background-size: 100%;
+    text-align: center;
+    padding: 1vh 0;
+}
+.footer p
+{
+    color:white;
+    font-size: 2vw;
+}
